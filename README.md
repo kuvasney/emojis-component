@@ -1,10 +1,38 @@
 # VueJs Emoji component example
 
-> This is a very simple example for how to use the emoji component on VueJs
+> This is a very simple example of how to use the emoji component on VueJs
 
 Emoji list imported from https://github.com/github/gemoji/blob/master/db/emoji.json
 
 You can see the application working at http://rafael.abc.br/emoji-vue/
+
+## Seting up
+Import the emoji component do you application
+``` javascript
+import Emojis from '@/YOUR-FAVORITE-COMPONENTS-FOLDER/emojis/emojis.vue'
+```
+Create the method to input then
+``` javascript
+    /**
+     * Append an emoji to contenteditable div
+     * @param {Object} emoji
+    */
+    insertEmoji (emoji) {
+      var area = document.querySelector('.emojiOk')
+      area.append(emoji.char)
+    }
+```
+Place the component to your template.
+``` vue
+  <emojis @emoji="insertEmoji" />
+```
+Add "emojiOk" class to your HTML component. 
+*I suggest you to use a contenteditable \<div\> instead of a \<textarea\>*.
+``` html
+  <div class="textmessage emojiOk" contenteditable="true" />
+```
+
+And it's all done. 
 
 ## Build Setup
 
