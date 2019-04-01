@@ -6,7 +6,7 @@ Emoji list imported from https://github.com/github/gemoji/blob/master/db/emoji.j
 
 You can see the application working at http://rafael.abc.br/emoji-vue/
 
-## Seting up
+## Setting up
 Import the emoji component do you application
 ``` javascript
 import Emojis from '@/YOUR-FAVORITE-COMPONENTS-FOLDER/emojis/emojis.vue'
