@@ -1,6 +1,10 @@
-# emoji-sample
+# VueJs Emoji component example
 
-> sample project for emojis component
+> This is a very simple example for how to use the emoji component on VueJs
+
+Emoji list imported from https://github.com/github/gemoji/blob/master/db/emoji.json
+
+You can see the application working at http://rafael.abc.br/emoji-vue/
 
 ## Build Setup
 
